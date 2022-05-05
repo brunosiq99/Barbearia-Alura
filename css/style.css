@@ -1,0 +1,119 @@
+header {
+	
+	background:#bbbbbb;
+	padding: 20px 0; 									/*Espaçamento Interno*/
+}
+
+.caixa {
+
+	width: 940px;
+	position: relative; 						/*Deixa posicionamento no interior relativo a caixa*/
+	margin: 0 auto;								/*UP - DOWN || auto: centraliza automaticamente dada qualquer dimensão de tela*/
+	text-align: center;
+}
+
+.links {
+
+	position: absolute;  
+	top: 110px;
+	left:0;
+}
+
+nav .links li {
+	margin: 0 15px 0 0; 						/*up right down left*/
+	display: inline;							/*Blocos em Linhas*/
+}
+
+nav .links a {
+	text-transform: uppercase;					
+	color: black;
+	font-weight: bold;							/*Negrito*/
+	font-size: 22px;
+	text-decoration: none;						/*Tirando sublinhado do link*/
+}
+
+nav .links a:hover{
+	text-transform: uppercase;					
+	color: white;
+	font-weight: bold;							
+	font-size: 22px;
+	text-decoration: none;
+} 
+
+
+nav .redes-sociais li{
+	margin: 0 0 0 15PX; 
+	display: inline;							/*Blocos em Linhas*/
+	width: 30px;
+	
+}
+.redes-sociais {
+	position: absolute;  
+	top: 100px;
+	right:0;
+}
+
+.logos-redes {
+	width: 50px;
+	border-radius: 10px;
+	vertical-align: middle;
+
+}
+
+nav .logos-redes:hover {
+	width: 60px;
+}
+
+
+
+main {
+	
+	}
+
+#banner {
+	width:100%;
+	margin: 0 auto;
+}
+.row {
+	margin: 0 auto;
+	width: 940px;
+	
+}
+
+.principal{
+	padding: 30px;
+	align-self: center; 
+
+}
+.principal p {
+	text-indent: 30px;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+#missao{
+	font-style: italic;
+}
+.beneficios {
+	padding: 30px;
+	text-align: center;
+}
+
+
+footer {
+	width: 100%;
+	text-align: center;
+	background: url("../Imagens/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: white;
+	font-size:13px;
+	margin-top: 20px;
+	
+
+}
