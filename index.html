@@ -2,9 +2,15 @@
 <html lang = "pt-br">										<!--marcar o conteúdo html-->
 	<head>						
 		<meta chairset = "UTF-8">								<!--define conjunto de caracteres-->
+		<meta name="viewport" content="width-device-width">
+
 		<title>Barbearia Alura</title>							<!--define título da página-->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">				<!--linka a outro arquivo-->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 		
 	</head>
 
@@ -13,7 +19,7 @@
 
 			<div class="caixa">
 
-				<h1><img src="Imagens/logo.png"></h1>
+				<h1><img src="Imagens/logo.png" alt="Logo da Barbearia Alura"></h1>
 
 				<nav> 																<!--Navegação-->
 
@@ -27,12 +33,11 @@
 				
 					<ul class="redes-sociais">
 
-						<li><a href="https://www.tiktok.com/"><img src="Imagens/tiktok.png" class="logos-redes"></a></li>
-						<li><a href="https://www.instagram.com/bruno_sique/"><img src="Imagens/instagram.png" class="logos-redes"></a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100011327268925"><img src="Imagens/facebook.png" class="logos-redes"></a></li>
-						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes"></a></li>
-						<li><a href="https://goo.gl/maps/FZz2R2h6L4rEtQoq7"><img src="Imagens/maps.png" class="logos-redes" ></a></li>
-						
+						<li><a href="https://www.tiktok.com/"><img src="Imagens/tiktok.png" class="logos-redes" alt="tiktok"></a></li>
+						<li><a href="https://www.instagram.com/bruno_sique/"><img src="Imagens/instagram.png" class="logos-redes" alt="Instagram"></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100011327268925"><img src="Imagens/facebook.png" class="logos-redes" alt="facebook"></a></li>
+						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes" alt="Whatsapp"></a></li>
+						<li><a href="https://goo.gl/maps/FZz2R2h6L4rEtQoq7"><img src="Imagens/maps.png" class="logos-redes" alt="maps"></a></li>
 					</ul>
 
 				</nav>
@@ -41,13 +46,14 @@
 
 		</header>
 
-		<main>
-			<img id = "banner" src = "Imagens/banner.jpg">
+		<img class = "banner" src = "Imagens/banner.jpg" alt="Foto interna da Barbearia Alura">
 
+		<main>	
 			
-			<div class="row">
-				<div class = "principal">	
-					<h2>Sobre a Barbearia Alura</h2>
+			<section class = "principal">	
+				<div class="conteudo-principal">
+					<h2 class = "titulo-principal">Sobre a Barbearia Alura</h2>
+					<img class = "utensilios" src="Imagens/utensilios.jpg" alt="Utensílios de um barbeiro">
 
 					<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
@@ -56,23 +62,50 @@
 					<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>	
 				</div>
 
-				<div class= "beneficios">
+			</section>
+
+			<section class="maps">
+
+				<h2 class = "titulo-principal">Nosso estabelecimento</h2>
+				<p>Nosso estabelecimento está localizado no coração da cidade!</p>
+				<div class="maps-conteudo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.6875815077747!2d-44.2573362769318!3d-21.13350156406894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1c94281365421%3A0x8a5f9f655649713d!2zUHJhw6dhIGRhIEVzdGHDp8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1652900718191!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 				
-					<h2>Benefícios</h2>
-					<ul> 
+			</section>
+
+			<section class= "beneficios">
+				
+				<h3 class = "titulo-principal">Benefícios</h3>
+
+				<div class="conteudo-beneficios">
+
+					<ul class="lista-beneficios"> 
+
 						<li class= "itens">Atendimento aos cliente</li>
 						<li class= "itens">Espaço diferenciado</li>						
 						<li class= "itens">Localização</li>
 						<li class= "itens">Profissionais qualificados</li>
-					</ul>
-		 		</div>
-		 	</div>
-			
+						<li class= "itens">Pontualidade</li>
+						<li class= "itens">Limpeza</li>
+
+					</ul><img class="img-beneficios" src="Imagens/beneficios.jpg"> 																				
+					<!-- Colando a <img> à </ul> garantimos que que o comportamento sera inline-->
+
+				</div>	
+
+				<div class="video"> 
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				</div>
+
+	 		</section>
 			
 		</main>
 
 		<footer>
-			<img src ="Imagens/logo-branco.png">
+			<img src ="Imagens/logo-branco.png" alt="Logo da Barbearia Alura">
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
 		</footer>
 

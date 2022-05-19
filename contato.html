@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html>
+<html lang = "pt-br">
 
 	<head>
 
@@ -18,7 +18,7 @@
 
 			<div class="caixa">
 
-				<h1><img src="Imagens/logo.png"></h1>
+				<h1><img src="Imagens/logo.png" alt="Logo da Barbearia Alura"></h1>
 
 				<nav> 																<!--Navegação-->
 
@@ -32,22 +32,85 @@
 				
 					<ul class="redes-sociais">
 
-						<li><a href="https://www.tiktok.com/"><img src="Imagens/tiktok.png" class="logos-redes"></a></li>
-						<li><a href="https://www.instagram.com/bruno_sique/"><img src="Imagens/instagram.png" class="logos-redes"></a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100011327268925"><img src="Imagens/facebook.png" class="logos-redes"></a></li>
-						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes"></a></li>
-						<li><a href="https://goo.gl/maps/FZz2R2h6L4rEtQoq7"><img src="Imagens/maps.png" class="logos-redes" ></a></li>
+						<li><a href="https://www.tiktok.com/"><img src="Imagens/tiktok.png" class="logos-redes" alt="tiktok"></a></li>
+						<li><a href="https://www.instagram.com/bruno_sique/"><img src="Imagens/instagram.png" class="logos-redes" alt="Instagram"></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100011327268925"><img src="Imagens/facebook.png" class="logos-redes" alt="facebook"></a></li>
+						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes" alt="Whatsapp"></a></li>
+						<li><a href="https://goo.gl/maps/FZz2R2h6L4rEtQoq7"><img src="Imagens/maps.png" class="logos-redes" alt="maps"></a></li>
 						
 					</ul>
 
 				</nav>
 
 			</div>
-
 		</header>
+		<main>
+			<form>
+				<fieldset>
+					<label for="nome">Nome e Sobrenome</label>
+					<input type="text" class="input-padrao" id="nome" required placeholder="Seu nome"> 
 
+					<label for="email">E-mail</label>
+					<input type="email" class="input-padrao" id="email" required placeholder="seuemail@dominio.com">
+
+					<label for="telefone">Telefone</label> 
+					<input type="tel" class="input-padrao" id="telefone"required placeholder="(XX) XXXXX-XXXX"> 
+
+					<label for="mensagem">Mensagem</label> 
+					<textarea cols="70" rows="10" class="input-padrao" id="mensagem" required placeholder="Sua mensagem"></textarea>
+			    </fieldset>
+
+				<fieldset class=preferenciaContato>
+					<legend>Como prefere nosso contato?</legend>
+
+	 				<label for="radio-email"><input type="radio" name="contato" id="mensagem" value="email" id="radio-email"> E-mail</label>
+		
+					<label for="radio-telefone"><input type="radio" name="contato" id="mensagem" value="email" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" id="mensagem" value="email" id="radio-whatsapp" checked> Whatsapp
+					</label>	
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por e-mail?</label>
+
+				<input class="botao" name="contato" type="submit" value="Enviar formulário">
+			</form>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda à quarta</td>
+						<td>08h-20h</td>
+					</tr>
+					<tr>
+						<td>Quinta e Sexta</td>
+						<td>06h-22h</td>
+					</tr>
+					<tr>
+						<td>Sábado</td>
+						<td>07h-17h</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</main>
 		<footer>
-			<img src ="Imagens/logo-branco.png">
+			<img src ="Imagens/logo-branco.png" alt="Logo da Barbearia Alura">
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
 		</footer>
 
