@@ -21,7 +21,7 @@ header {
 
 nav .links li {
 	margin: 0 15px 0 0; 						/*up right down left*/
-	display: inline;							/*Blocos em Linhas*/
+	display: inline-block;							/*Blocos em Linhas*/
 }
 
 nav .links a {
@@ -61,12 +61,69 @@ nav .redes-sociais li{
 }
 
 nav .logos-redes:hover {
-	width: 60px;
+	transform: scale(1.2);
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+
+}
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	margin: 10px 0;
+	font-size: 20px;
+}
+form .input-padrao {
+	display: block;
+	padding: 10px 25px;
+	width: 50%;
+	border-radius: 5px;
+}
+
+form .preferenciaContato, form .checkbox {
+	margin: 20px 0;
 }
 
 
 
+form .botao {
+	margin-top: 10px;
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
 
+form .botao:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+
+table {
+	margin: 40px 0;
+}
+
+thead {
+	background-color: #555555;
+	color: white;
+	font-weight: bold;
+}
+td, th {
+	border: 1px solid black;
+	padding: 5px;
+}
 
 footer {
 	

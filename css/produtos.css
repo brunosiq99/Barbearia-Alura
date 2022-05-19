@@ -61,7 +61,7 @@ nav .redes-sociais li{
 }
 
 nav .logos-redes:hover {
-	width: 60px;
+	transform: scale(1.2);
 }
 
 

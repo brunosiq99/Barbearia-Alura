@@ -1,3 +1,8 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho Padrão do SIte */
 header {
 	
 	background:#bbbbbb;
@@ -61,46 +66,137 @@ nav .redes-sociais li{
 }
 
 nav .logos-redes:hover {
-	width: 60px;
+	transform: scale(1.2);
 }
 
 
+/*css da página inicial*/
 
-main {
-	
-	}
-
-#banner {
+.banner {
 	width:100%;
 	margin: 0 auto;
 }
-.row {
-	margin: 0 auto;
-	width: 940px;
+
+main {
+	
 	
 }
 
 .principal{
-	padding: 30px;
+	padding: 3em 0;
 	align-self: center; 
+	background: linear-gradient(#fefefe);
 
 }
+.conteudo-principal {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.titulo-principal {
+	clear: left;
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em 0;						 /*proporcional ao font-size*/
+	color: rgba(0,0,0,0.6);
+}
+
+
+.titulo-principal:before{
+	content: " ";
+}
+
+.titulo-principal:after{
+	content: " ";
+}
+
 .principal p {
 	text-indent: 30px;
+	margin: 0 0 1em 0;
 }
 
-h2 {
-	text-align: center;
+.principal strong{
 	font-weight: bold;
+}
+.principal em {
+	font-style: italic;
 }
 
 #missao{
 	font-style: italic;
 }
-.beneficios {
-	padding: 30px;
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+
+
+.maps {
+	padding: 3em 0;
+	background: linear-gradient(#fefefe, #888888);
+}
+.maps p {
+	margin-bottom: 2em;
 	text-align: center;
 }
+
+.maps-conteudo {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5em;
+}
+
+.itens:before {
+	content:"✯ ";
+}
+
+.itens:first-child{
+	/*font-weight: bold;*/
+}
+
+/*first-child last-child nth-child(n)*/
+
+.img-beneficios {
+	width:60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 black;
+	/*box-shadow: X Y BLUR INTENSIDADE-BORDA COLOR*/
+}
+
+.img-beneficios:hover{
+	opacity: 0.5;
+}
+
+.video {
+	width: 500px;
+	margin: 2em auto;
+}
+
+
 
 
 footer {
@@ -115,5 +211,13 @@ footer {
 	font-size:13px;
 	margin-top: 20px;
 	
+}
+
+
+/*Adaptando para telas de celulares*/
+@media screen and (max-width: 480px){
+	body {
+		
+	}
 
 }
