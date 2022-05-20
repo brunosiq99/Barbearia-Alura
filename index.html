@@ -2,7 +2,7 @@
 <html lang = "pt-br">										<!--marcar o conteúdo html-->
 	<head>						
 		<meta chairset = "UTF-8">								<!--define conjunto de caracteres-->
-		<meta name="viewport" content="width-device-width">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 		<title>Barbearia Alura</title>							<!--define título da página-->
 		<link rel="stylesheet" href="css/reset.css">
@@ -15,9 +15,12 @@
 	</head>
 
 	<body>
+		
 		<header>			
 
 			<div class="caixa">
+				
+
 
 				<h1><img src="Imagens/logo.png" alt="Logo da Barbearia Alura"></h1>
 
@@ -30,16 +33,17 @@
 						<li><a href="contato.html">Contato</a></li>
 
 					</ul>
-				
+
 					<ul class="redes-sociais">
 
 						<li><a href="https://www.tiktok.com/"><img src="Imagens/tiktok.png" class="logos-redes" alt="tiktok"></a></li>
 						<li><a href="https://www.instagram.com/bruno_sique/"><img src="Imagens/instagram.png" class="logos-redes" alt="Instagram"></a></li>
 						<li><a href="https://www.facebook.com/profile.php?id=100011327268925"><img src="Imagens/facebook.png" class="logos-redes" alt="facebook"></a></li>
-						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes" alt="Whatsapp"></a></li>
+						<li><a href="https://wa.me/5532999003054?text=Vasco"><img src="Imagens/whatsapp2.png" class="logos-redes" alt="Whatsapp" id="whatsapp-icon"></a></li>
 						<li><a href="https://goo.gl/maps/FZz2R2h6L4rEtQoq7"><img src="Imagens/maps.png" class="logos-redes" alt="maps"></a></li>
-					</ul>
 
+					</ul>
+				
 				</nav>
 
 			</div>
@@ -51,7 +55,7 @@
 		<main>	
 			
 			<section class = "principal">	
-				<div class="conteudo-principal">
+				<div class="principal-conteudo">
 					<h2 class = "titulo-principal">Sobre a Barbearia Alura</h2>
 					<img class = "utensilios" src="Imagens/utensilios.jpg" alt="Utensílios de um barbeiro">
 
@@ -78,11 +82,11 @@
 				
 				<h3 class = "titulo-principal">Benefícios</h3>
 
-				<div class="conteudo-beneficios">
+				<div class="beneficios-conteudo">
 
 					<ul class="lista-beneficios"> 
 
-						<li class= "itens">Atendimento aos cliente</li>
+						<li class= "itens">Atendimento aos clientes</li>
 						<li class= "itens">Espaço diferenciado</li>						
 						<li class= "itens">Localização</li>
 						<li class= "itens">Profissionais qualificados</li>
@@ -96,7 +100,7 @@
 
 				<div class="video"> 
 
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 				</div>
 
@@ -107,6 +111,7 @@
 		<footer>
 			<img src ="Imagens/logo-branco.png" alt="Logo da Barbearia Alura">
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+			<a href="https://wa.me/5532999003054?text=Vasco"><img class="icone-fixo-whatsapp" src="Imagens/whatsapp2.png"></a>
 		</footer>
 
 	</body>
