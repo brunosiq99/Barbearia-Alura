@@ -232,22 +232,27 @@ footer {
 		margin: 0 1em;
 	}
 
-	.lista-beneficios,.img-beneficios {
+	.lista-beneficios {
+		display: block-inline;
+		width: 90%;
+		text-align: center;
+
+	}
+
+	.img-beneficios {
 
 		width: 100%;
 		box-shadow: none;
 
 	}
-	.lista-beneficios {
-		margin:0 1rem 1rem 1rem;
-	}
+	
 
 	
 
 
 
 	.icone-fixo-whatsapp {
-		display: none;
+		display: block;
 		position: fixed;
 		right: 5%;
 		bottom: 5%;
